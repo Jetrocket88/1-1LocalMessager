@@ -1,0 +1,10 @@
+^C:\USERS\USER\C++\1-1MESSAGING\CLIENT\BUILD\CMAKEFILES\1112BCFCF1C47D6D6A606734D78D8B7C\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/User/C++/1-1Messaging/client -BC:/Users/User/C++/1-1Messaging/client/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/User/C++/1-1Messaging/client/build/client.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
